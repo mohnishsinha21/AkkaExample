@@ -10,7 +10,7 @@ public class CoapClientExample {
 
     public static void main(String[] args) throws ConnectorException, IOException {
         // Create a CoAP client for the target URI
-        CoapClient client = new CoapClient("coap://localhost/hello");
+        CoapClient client = new CoapClient("coap://localhost:5683/example");
 
         // Send a GET request
         CoapResponse response = client.get();
